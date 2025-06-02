@@ -1,6 +1,6 @@
 # Animated Calculator with Leave Confirmation Popup
 
-## Calculator Screenshot
+## Screenshot
 ![image](https://github.com/user-attachments/assets/1ab64131-e6fa-4a58-aa9b-e0e5a5fd6cd0)
 ![image](https://github.com/user-attachments/assets/a31e4ae6-52a9-4da9-ad82-23551bfaba50)
 ![image](https://github.com/user-attachments/assets/06d0038f-a0cb-434f-b877-5bf6bbf7434a)
@@ -49,7 +49,7 @@ This project is excellent for beginners to intermediate developers to learn Java
 - Add a dark mode toggle with smooth transitions.
 - Save user preferences (theme, last calculation) using localStorage.
 
-## 👨‍💻 Author
+## Author
 
 **Samarth Varshney**  
 Thank you for checking out this project! 😊
