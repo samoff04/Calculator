@@ -1,0 +1,212 @@
+/* Reset & base */
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculator {
+  background: #2a2a72;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+  width: 320px;
+}
+
+.display {
+  background: #1b1b38;
+  color: #fff;
+  font-size: 3rem;
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-align: right;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+  box-shadow: inset 0 0 10px #000000aa;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+
+.btn {
+  background: #4343c8;
+  color: white;
+  font-size: 1.5rem;
+  padding: 20px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 5px #2a2a72;
+  user-select: none;
+}
+
+.btn:hover:not(:disabled) {
+  background: #5a5ae3;
+  box-shadow: 0 7px #2a2a72;
+  transform: translateY(-3px);
+}
+
+.btn:active:not(:disabled) {
+  box-shadow: 0 2px #2a2a72;
+  transform: translateY(1px);
+}
+
+.btn:disabled {
+  background: #999;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.clear {
+  background: #f44336;
+  box-shadow: 0 5px #b33027;
+}
+
+.clear:hover:not(:disabled) {
+  background: #ff5c50;
+}
+
+.delete {
+  background: #ff9800;
+  box-shadow: 0 5px #b36b00;
+}
+
+.delete:hover:not(:disabled) {
+  background: #ffb347;
+}
+
+.operator {
+  background: #6a1b9a;
+  box-shadow: 0 5px #4a1170;
+}
+
+.operator:hover:not(:disabled) {
+  background: #8e24aa;
+}
+
+.equal {
+  background: #00c853;
+  grid-row: span 2;
+  box-shadow: 0 5px #00701a;
+}
+
+.equal:hover:not(:disabled) {
+  background: #00e676;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+.decimal {
+  background: #4caf50;
+  box-shadow: 0 5px #357a38;
+}
+
+.decimal:hover:not(:disabled) {
+  background: #66bb6a;
+}
+
+/* Leave button style */
+.leave {
+  background: #e91e63;
+  box-shadow: 0 5px #b0003a;
+  grid-column: span 4;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.leave:hover:not(:disabled) {
+  background: #ff4081;
+  box-shadow: 0 7px #b0003a;
+  transform: translateY(-3px);
+}
+
+/* Popup background overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease forwards;
+  z-index: 1000;
+}
+
+/* Popup container */
+.popup {
+  background: #1b1b38;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 30px #ff4081;
+  text-align: center;
+  max-width: 400px;
+  animation: popIn 0.3s ease forwards;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Buttons inside popup */
+.popup button {
+  background: #ff4081;
+  border: none;
+  padding: 12px 25px;
+  margin: 15px 10px 0 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px #b0003a;
+  transition: all 0.2s ease;
+}
+
+.popup button:hover {
+  background: #e91e63;
+  box-shadow: 0 6px #b0003a;
+  transform: translateY(-2px);
+}
+
+/* Popup animations */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Goodbye popup special style */
+.goodbye-message {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ff4081;
+  margin-top: 20px;
+}
