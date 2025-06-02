@@ -49,7 +49,7 @@ This project is excellent for beginners to intermediate developers to learn Java
 - Add a dark mode toggle with smooth transitions.
 - Save user preferences (theme, last calculation) using localStorage.
 
-## Author
-**Samarth Varshney**
+## 👨‍💻 Author
 
-**Thank you for visiting!**
+**Samarth Varshney**  
+Thank you for checking out this project! 😊
