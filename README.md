@@ -1,6 +1,6 @@
 # NumeriQ
 
-**Make your calculations easier with your buddy : NumeriQ**
+**NumeriQ** combines edge and elegance to deliver smooth, intuitive calculations with zero clutter.
 
 ---
 
@@ -14,7 +14,7 @@
 
 ## Description
 
-This project is a beautifully designed, fully functional calculator created with **HTML**, **CSS**, and **JavaScript**. It features a modern, animated user interface with smooth button interactions, providing a delightful user experience.
+This project is a beautifully designed, fully functional calculator. It features a modern, animated user interface with smooth button interactions, providing a delightful user experience.
 
 Key highlights:
 
@@ -24,8 +24,6 @@ Key highlights:
 - Upon confirming the leave action, the calculator disables all input and displays a friendly goodbye popup.
 - Responsive layout with vibrant gradients and intuitive animations.
 - Error handling for invalid inputs and division by zero.
-
-This project is excellent for beginners to intermediate developers to learn JavaScript event handling, DOM manipulation, CSS animations, and modular coding practices.
 
 ---
 
